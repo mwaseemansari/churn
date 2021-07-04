@@ -12,7 +12,7 @@ function readTextFile(file, callback) {
             callback(rawFile.responseText);
         }
     }
-    rawFile.send(null);
+//     rawFile.send(null);
 }
 console.log(params)
 //usage:
