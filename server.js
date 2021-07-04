@@ -94,7 +94,7 @@ console.log(params)
         'Scoring Date': new Date().toISOString().slice(0, 10)
     }
     console.log(JSON.stringify(response))
-    document.getElementsByName("body").innerHTML = JSON.stringify(response)
+    document.body.innerHTML = JSON.stringify(response)
     
 
 // });
