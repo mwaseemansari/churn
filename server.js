@@ -2,6 +2,9 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 // http://localhost:3000/?kundetype=a&pensionist=ja&samboende=ja&born=nej&tlf_eksisterer=ja&kontrakt=arlig&inbound_opkald=nej&betalingsservice=nej&vaerdi=5000
 // var mydata = JSON.parse(churn);
+
+var json = $.getJSON("test.json");
+var data = eval("(" +json.responseText + ")");
 // console(mydata)
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
