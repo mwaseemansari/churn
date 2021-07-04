@@ -6,20 +6,20 @@ const params = Object.fromEntries(urlSearchParams.entries());
 var json = $.getJSON("test.json");
 var data = eval("(" +json.responseText + ")");
 // console(mydata)
-function readTextFile(file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4 && rawFile.status == "200") {
-            callback(rawFile.responseText);
-        }
-    }
+// function readTextFile(file, callback) {
+//     var rawFile = new XMLHttpRequest();
+//     rawFile.overrideMimeType("application/json");
+//     rawFile.open("GET", file, true);
+//     rawFile.onreadystatechange = function() {
+//         if (rawFile.readyState === 4 && rawFile.status == "200") {
+//             callback(rawFile.responseText);
+//         }
+//     }
 //     rawFile.send(null);
-}
+// }
 console.log(params)
 //usage:
-readTextFile("/churn.json", function(text){
+// readTextFile("/churn.json", function(text){
     var data = JSON.parse(text);
     var features = ['kundetype', 'pensionist', 'samboende', 'born', 'tlf_eksisterer', 'kontrakt', 'inbound_opkald', 'betalingsservice', 'vaerdi','churn']
     
@@ -93,4 +93,4 @@ readTextFile("/churn.json", function(text){
     $('body').html(JSON.stringify(response))
     
 
-});
+// });
