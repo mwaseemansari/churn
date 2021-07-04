@@ -17,8 +17,7 @@ const params = Object.fromEntries(urlSearchParams.entries());
 //     }
 //     rawFile.send(null);
 // }
-var json_var = '{
-    "kundetype": {
+var json_var = '{"kundetype": {
         "5995": "a",
         "4699": "b",
         "2847": "b",
