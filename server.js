@@ -16,7 +16,7 @@ function readTextFile(file, callback) {
 }
 console.log(params)
 //usage:
-readTextFile("/data/churn.json", function(text){
+readTextFile("churn.json", function(text){
     var data = JSON.parse(text);
     var features = ['kundetype', 'pensionist', 'samboende', 'born', 'tlf_eksisterer', 'kontrakt', 'inbound_opkald', 'betalingsservice', 'vaerdi','churn']
     
