@@ -18,7 +18,7 @@ console.log(params)
 //usage:
 readTextFile("/data/churn.json", function(text){
     var data = JSON.parse(text);
-    features = ['kundetype', 'pensionist', 'samboende', 'born', 'tlf_eksisterer', 'kontrakt', 'inbound_opkald', 'betalingsservice', 'vaerdi','churn']
+    var features = ['kundetype', 'pensionist', 'samboende', 'born', 'tlf_eksisterer', 'kontrakt', 'inbound_opkald', 'betalingsservice', 'vaerdi','churn']
     
     var ids = Object.keys(data[features[0]]);
 
