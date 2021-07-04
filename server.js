@@ -93,7 +93,7 @@ console.log(params)
         'probability': probability,
         'Scoring Date': new Date().toISOString().slice(0, 10)
     }
-    console.log(JSON.stringigy(response))
+    console.log(JSON.stringify(response))
     document.getElementsByName("body").innerHTML = JSON.stringify(response)
     
 
